@@ -27,10 +27,13 @@ Após concluir a implementação, siga estas etapas para verificar se a Nova Bar
 > 1. Abra seu site em um navegador<br>
 > 2. Verifique se a Nova Barra de Parceiros é exibida corretamente na parte superior do site<br>
 > 3. Teste a funcionalidade da barra, como cliques em links e interações
+
 ---
+
 ## 3. Sugestão Para Fixar a Barra
 ```sh
-  .cda-container
+
+.cda-container {
     visibility: hidden;
     position: fixed;
     top: 0;
@@ -40,6 +43,22 @@ Após concluir a implementação, siga estas etapas para verificar se a Nova Bar
     justify-content: center;
     align-items: center;
     min-height: 50px;
+}
+
+// Sugestão funcional para WordPress
+
+body {
+	margin-top:50px;
+}
+
+cda-partners-bar {
+	height: 50px !important;
+	display: block !important;
+	top: 0 !important;
+	position: absolute !important;
+	width: 100% !important;
+}
+
 ```
 ---
 ## 4. Atributos
